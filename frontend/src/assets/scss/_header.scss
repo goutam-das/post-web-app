@@ -1,0 +1,79 @@
+header {
+    height: $headerHeight;
+    background-color: $headerBackgroundColor;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px #a5a5a5;
+
+    nav {
+        padding: 0 15px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            padding: 0;
+            margin: 0;
+            color: $backgroundColor;
+
+            span {
+                color: yellowgreen;
+            }
+        }
+
+        div {
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            ul {
+                li {
+                    margin: 0 8px;
+                    a {
+                        padding: 10px 15px;
+                        font-size: 16px;
+
+                        &:hover {
+                            background-color: rgba(202, 255, 96, 0.2);
+                            border-bottom: 2px solid yellowgreen;
+                        }
+
+                        &.active {
+                            border-bottom: 2px solid yellowgreen;
+                        }
+
+                        &.profile,
+                        &.profile:hover {
+                            padding: 8px 15px;
+                            background-color: rgba(202, 255, 96, 0.2);
+                            border-bottom: 2px solid yellowgreen;
+                        }
+
+                        &.folders,
+                        &.folders:hover {
+                            padding: 8px 15px;
+                            background-color: rgba(#4183c4, 0.2);
+                            border-bottom: 2px solid #4183c4;
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+}

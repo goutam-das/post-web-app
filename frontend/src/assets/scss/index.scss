@@ -1,0 +1,76 @@
+@import '~react-loader-spinner/dist/loader/css/react-spinner-loader.css';
+@import './variables';
+@import './header';
+
+
+html,
+body {
+    height          : 100%;
+    width           : 100%;
+    padding         : 0;
+    margin          : 0;
+    background-color: $backgroundColor;
+}
+
+main {
+    margin-top: 80px;
+}
+
+.modal {
+    p.warning-msg {
+        font-size : 12px;
+        margin    : 0;
+        margin-top: 10px;
+        text-align: center;
+
+        i {
+            color: #FFCC00;
+        }
+    }
+}
+
+form.ui.signup,
+form.ui.signin {
+    max-width: 400px !important;
+    margin   : auto;
+}
+
+div.create-new-folder {
+    height         : 100px;
+    width          : 100px;
+    border         : 2px dashed grey;
+    border-radius  : 20px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    cursor         : pointer;
+}
+
+.fallback {
+    display        : flex;
+    position       : fixed;
+    top            : 0;
+    left           : 0;
+    right          : 0;
+    bottom         : 0;
+    justify-content: center;
+    align-items    : center;
+    z-index        : 1;
+}
+
+button.ui.add-post-button {
+    position: fixed;
+    right   : 45px;
+    bottom  : 45px;
+    z-index : 99999;
+}
+
+div.comment-form {
+    display    : flex;
+    align-items: center;
+
+    div.field {
+        width : 320px;
+        margin: 0 !important;
+    }
+}
