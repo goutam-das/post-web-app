@@ -3,15 +3,11 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import Execute from './Execute';
 import Routes from './Routes';
 
-// https://www.apollographql.com/docs/react/migrating/apollo-client-3-migration/
-
 const client = new ApolloClient({
   uri: 'http://localhost:8080/graphql',
   cache: new InMemoryCache(),
   headers: {
-    authorization: `Bearer ${localStorage.getItem('token')}` || '',
-    'client-name': 'Space Explorer [web]',
-    'client-version': '1.0.0',
+    authorization: `Bearer ${localStorage.getItem('token')}` || ''
   }
 });
 
